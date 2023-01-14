@@ -1,0 +1,161 @@
+* {
+  text-align: center;
+}
+
+.headerImage {
+  max-height: 200px;
+  max-width: 1fr;
+}
+
+.millie, .images {
+  max-height: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: grid;
+  text-align: center;
+  position: fixed;
+  justify-items: center;
+  background-color: grey;
+}
+
+h1 {
+  padding-top: 100px;
+}
+
+a:hover {
+  color: grey;
+}
+
+#headerNav {
+  list-style-type: none;
+  /* margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100;
+  position: sticky;
+  top: 0; */
+}
+
+/* add active class to show what page you are on??
+.active { 
+    background-color: orange;
+} */
+.burger {
+  display: grid;
+}
+
+nav {
+  display: grid;
+}
+
+.burger-check {
+  display: none;
+}
+
+li {
+  list-style: none;
+  font-size: 25px;
+  padding: 5px 0;
+}
+li a {
+  text-decoration: none;
+}
+li a:hover {
+  color: grey;
+}
+
+ul {
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(5, minmax(150px, 500px));
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    background-color: transparent;
+  }
+
+  .burger {
+    display: inline-block;
+    border: 0;
+    background: none;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 4px solid currentColor;
+    width: 28px;
+  }
+  .burger::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  .burger:before {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+  .burger:after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transitiom: -webkit-transform 0.5s ease-in-out;
+  }
+
+  .burger-check {
+    display: none;
+  }
+
+  .burger-check:checked ~ .burger {
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.08s ease-in-out;
+    -webkit-transition: border-bottom 0.8s ease-in-out;
+  }
+  .burger-check:checked ~ .burger:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+  .burger-check:checked ~ .burger:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+
+  .navigation {
+    display: grid;
+    grid-column-start: 1;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .burger-check:checked ~ .navigation {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  ul {
+    display: inline-block;
+  }
+
+  h1 {
+    padding-top: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
