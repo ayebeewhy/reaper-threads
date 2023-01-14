@@ -2,9 +2,14 @@
   text-align: center;
 }
 
+body {
+  overflow-y: scroll;
+  text-align: center;
+}
+
 .headerImage {
-  max-height: 200px;
-  max-width: 1fr;
+  /* max-height: 50%; */
+  max-width: 50%;
 }
 
 .millie, .images {
@@ -21,11 +26,18 @@ header {
   text-align: center;
   position: fixed;
   justify-items: center;
-  background-color: grey;
+  background-color: #395B64;
+  border-radius: 0 0 50% 50%;
 }
 
 h1 {
   padding-top: 100px;
+  color: white;
+}
+
+.testPara {
+  position: absolute;
+  bottom: 10%;
 }
 
 a:hover {
@@ -34,6 +46,10 @@ a:hover {
 
 #headerNav {
   list-style-type: none;
+  background-color: #A5C9CA;
+  margin: 0;
+  padding: 1rem;
+  position: sticky;
   /* margin: 0;
   padding: 0;
   position: fixed;
@@ -51,7 +67,7 @@ a:hover {
 }
 
 nav {
-  display: grid;
+  display: flex;
 }
 
 .burger-check {
@@ -75,6 +91,35 @@ ul {
   padding: 0;
   grid-template-columns: repeat(5, minmax(150px, 500px));
 }
+
+footer p {
+  position: absolute;
+  bottom: 2%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1100px) {
   header {
